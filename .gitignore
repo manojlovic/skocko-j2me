@@ -1,5 +1,7 @@
 build
-dist
+dist/*
+!dist/Skocko-j2me.jad
+!dist/Skocko-j2me.jar
 
 # NetBeans
 nbproject

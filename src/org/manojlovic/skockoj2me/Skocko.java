@@ -68,7 +68,7 @@ public class Skocko extends MIDlet implements CommandListener  {
     form.append("\n");
     form.append("Autor: Manojlović Miloš");
     form.append("\n");
-    form.append("E-Mail: milos@manojlovic.org");
+    form.append("E-Mail: manojlovic88@gmail.com");
     form.append("\n");
     form.append("Web: http://manojlovic.org");
     form.append("\n");
