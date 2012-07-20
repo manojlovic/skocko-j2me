@@ -33,7 +33,10 @@ public class Graphic extends Canvas implements Runnable {
                                         0,0,0,0};// row 6
     
     private Random r = new Random();
-    private int[] result = new int[]{this.r.nextInt(5), this.r.nextInt(5), this.r.nextInt(5), this.r.nextInt(5)};
+    private int[] result = new int[]{this.r.nextInt(5), 
+                                     this.r.nextInt(5), 
+                                     this.r.nextInt(5), 
+                                     this.r.nextInt(5)};
     
     private Image[] img = new Image[11];
     private int step = 10; // in pixels
@@ -132,7 +135,8 @@ public class Graphic extends Canvas implements Runnable {
                 selectedCircls_res[4*line+2] = res[2];
                 selectedCircls_res[4*line+3] = res[3];
                 
-                if(res[0] == 8 && res[1] == 8 && res[2] == 8 && res[3] == 8){ // four red circles
+                // four red circles
+                if(res[0] == 8 && res[1] == 8 && res[2] == 8 && res[3] == 8){
                     game_over = false;
                     the_end(g);
                 }
@@ -145,11 +149,6 @@ public class Graphic extends Canvas implements Runnable {
         
         if(end_game || line == 6)
             the_end(g);
-        
-        //TODO delete it's TEST
-        g.setColor(255, 0, 0);
-        //g.drawString("rez - "+result[0]+", "+result[1]+", "+result[2]+", "+result[3], 10, 10, 0);
-        
     }
     
     public void run(){

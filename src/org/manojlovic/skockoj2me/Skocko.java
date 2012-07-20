@@ -57,20 +57,26 @@ public class Skocko extends MIDlet implements CommandListener  {
      form.setTitle(version);
      form.append("Opis igre:");
      form.append("\n");
-     form.append("Treba naci pravu kombinaciju sinbola, pri cemu vam pomazu crveni kruzici koji oznacavaju da je sinbol na pravom mestu, dok zuti kruzici oznacavaju da sinbol nije na pravom mestu. Igra je identicna kao i na TV slagalici. Srecno :)");
+     form.append("Treba naci pravu kombinaciju simbola. U tome ce vam pomoci" +
+             "crveni kruzici koji oznacavaju da je sinbol na pravom mestu, dok " +
+             "zuti kruzici oznacavaju da sinbol nije na pravom mestu. Igra je " +
+             "identicna kao i na TV slagalici. Srecno :)");
      
     Display.getDisplay(this).setCurrent( form);
   }
  public void infoCom(){
     form.deleteAll();
     form.setTitle(version);
-    form.append("Program: " + version);
+    form.append("Igra: " + version);
     form.append("\n");
     form.append("Autor: Manojlović Miloš");
     form.append("\n");
     form.append("E-Mail: manojlovic88@gmail.com");
     form.append("\n");
-    form.append("Web: http://manojlovic.org");
+    form.append("Web sajt: http://manojlovic.org");
+    form.append("\n");
+    form.append("Greske, predloge i zamerke mozete pisati na adresi: " +
+            "http://github.com/manojlovic/skocko-j2me/issues");
     form.append("\n");
     form.append("Beograd, Jun 2012");
     Display.getDisplay(this).setCurrent(form);

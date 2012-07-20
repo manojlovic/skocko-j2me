@@ -3,3 +3,4 @@
 ## Supported phones ##
 
 * Sony Ericsson K510i
+* Nokia 5130
